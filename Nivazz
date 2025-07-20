@@ -1,0 +1,44 @@
+import { Instagram, Twitter, Youtube, Mail } from 'lucide-react';
+
+export function Footer() {
+  return (
+    <footer className="bg-black text-white">
+      <div className="relative">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=300&fit=crop"
+          alt="Footer landscape"
+          className="w-full h-48 object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center space-y-4">
+            <h3 className="text-xl tracking-wide">CAPTURE THE MOMENT.</h3>
+            <h3 className="text-xl tracking-wide">STAY FOR THE MEMORY.</h3>
+            <div className="flex items-center justify-center space-x-6 pt-4">
+              <Instagram className="h-5 w-5 hover:text-gray-300 cursor-pointer transition-colors" />
+              <Twitter className="h-5 w-5 hover:text-gray-300 cursor-pointer transition-colors" />
+              <Youtube className="h-5 w-5 hover:text-gray-300 cursor-pointer transition-colors" />
+              <Mail className="h-5 w-5 hover:text-gray-300 cursor-pointer transition-colors" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="text-sm text-gray-400">
+              © 2024 Bryan Minear. All rights reserved.
+            </div>
+            
+            <div className="flex space-x-8 text-sm text-gray-400">
+              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-white transition-colors">Licensing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
